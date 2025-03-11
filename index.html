@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Shi FU Me</title>
+</head>
+<body>
+   <div class="game-container">
+    <h1>Shi FU Me</h1>
+    
+    <div class="head">
+        <div class="manches">manche: 
+            <span id="manche">0</span>
+            <button id="toggleHistorique">Afficher l'historique</button>
+            <div id="historique" style="display: none;">
+                <h3>Historique :</h3>
+                <p id="content"></p>
+            </div>
+        </div>
+        <button id="reinitialiserDerniereManche">Reinitialiser la  Derniére Manche</button>
+        <button id="nouvelle-partie">Nouvelle Partie</button>
+        <div id="partie"></div>
+    </div>
+    <main class="container">
+
+        <div class="joueur">
+            <h2>score :</h2><span id="score-joueur">0</span>
+            <p id="username">Joueur</p>
+            <img src="joueur.png" width="250" height="250" alt="photo joueur">
+        </div>
+        
+        <div class="resultat">
+            <p id="resultat"></p>
+            <div id="comparer">
+                <p id="choix-joueur"></p>
+                <p id="choix-ordinateur"></p>
+            </div>
+        </div>
+
+        <div class="robot">
+            <h2>score :</h2><span id="score-robot">0</span>
+            <p id="robot">Robot</p>
+            <img src="robot.png" width="250" height="250" alt="image">
+        </div>
+
+    </main>
+   
+    <footer>
+       <button id="pierre" class="pierre">
+           <i class="fa-solid fa-hand-back-fist"></i>
+           <p>pierre</p>
+       </button>
+       <button id="ciseaux" class="ciseaux">
+            <i class="fa-solid fa-hand-scissors"></i>
+            <p>ciseaux</p>
+       </button>
+       <button id="papier" class="papier">
+            <i class="fa-solid fa-hand"></i>
+            <p>papier</p>
+       </button>
+    </footer>
+   </div>
+
+
+
+   <script src="script.js"></script>
+</body>
+</html>

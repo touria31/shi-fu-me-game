@@ -213,7 +213,7 @@ function partieJouée() {
         scoreRobot.innerHTML = scoreRobotValeur;
     }
 
-    if (mancheValeurRobot === 1 ) {
+    if (mancheValeurRobot === 5) {
         partieValeur++;
         partie.innerHTML = 'PERDU 😢';
         partie.classList.add('partie-perdue');
@@ -226,7 +226,7 @@ function partieJouée() {
         }, 5500);
         
     }
-    else if (mancheValeurJoueur === 1){
+    else if (mancheValeurJoueur === 5){
         partieValeur++;
         partie.innerHTML = 'GAGNÉ 🎉';
         partie.classList.add('partie-gagnee');

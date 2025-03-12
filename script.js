@@ -213,21 +213,31 @@ function partieJouée() {
         scoreRobot.innerHTML = scoreRobotValeur;
     }
 
-    if (mancheValeurRobot === 5 ) {
+    if (mancheValeurRobot === 1 ) {
         partieValeur++;
         partie.innerHTML = 'PERDU 😢';
-        partie.classList.add('partie-perdue')
+        partie.classList.add('partie-perdue');
         
-        setTimeout(nouvellePartie, 2000);
+        setTimeout(() => {
+            alert('Fin de partie');
+        }, 5000);
+        setTimeout(() => {
+            nouvellePartie();
+        }, 5500);
         
     }
-    else if (mancheValeurJoueur === 5){
+    else if (mancheValeurJoueur === 1){
         partieValeur++;
         partie.innerHTML = 'GAGNÉ 🎉';
         partie.classList.add('partie-gagnee');
-
-        setTimeout(nouvellePartie, 2000);
-        
+       
+        setTimeout(() => {
+            alert('Fin de partie');
+        }, 5000);
+       
+        setTimeout(() => {
+            nouvellePartie();
+        }, 5500);
     }
 }
 

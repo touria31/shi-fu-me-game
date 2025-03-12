@@ -15,15 +15,17 @@ h1 {
     text-align: center;
     color: white;
     font-size: 2.5rem;
-    margin: 0;
+    margin-bottom: 20px;
 }
 .head {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .head button {
     padding: 10px 15px;
-    background: linear-gradient(135deg, #555, #888);
+    font-size: 15px;
+    background: linear-gradient(60deg, #929591, #e9eae9);
     color: white;
     border: none;
     border-radius: 10px;
@@ -47,8 +49,11 @@ h1 {
 #partie {
     position: absolute;
     left: 50%;
+    top: 50%;
     transform: translateX(-50%);
-   
+    font-size: 5rem; 
+    font-weight: bold;
+    text-align: center;
 }
 .container {
     display: flex;
@@ -147,27 +152,27 @@ i:hover {
 /* Animation de victoire */
 .partie-gagnee {
     color: #5aed5a;
-    font-size: 2rem;
+    font-size: 5rem;
     animation: victoire 1.5s ease-in-out infinite;
 }
 
 @keyframes victoire {
-    0% { opacity: 1; transform: translate(-50%, -50%) rotate(0deg) scale(1); }
-    50% { transform: translate(-50%, -50%) rotate(180deg) scale(1.2); }
-    100% { opacity: 1; transform: translate(-50%, -50%) rotate(360deg) scale(1); }
+    0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+    50% { transform: translate(-50%, -50%) rotate(180deg) scale(1.5); }
+    100% { transform: translate(-50%, -50%) rotate(360deg) scale(1); }
 }
 
 /* Animation de défaite */
 .partie-perdue {
     color: red;
-    font-size: 2rem;
+    font-size: 5rem;
     animation: defaite 1.5s ease-in-out infinite;
 }
 
 @keyframes defaite {
-    0% { opacity: 1; transform: translate(-50%, -50%) rotate(0deg) scale(1); }
-    50% { transform: translate(-50%, -50%) rotate(-180deg) scale(0.8); }
-    100% { opacity: 1; transform: translate(-50%, -50%) rotate(-360deg) scale(1); }
+    0% {  transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+    50% { transform: translate(-50%, -50%) rotate(-180deg) scale(1.5); }
+    100% { transform: translate(-50%, -50%) rotate(-360deg) scale(1); }
 }
 
 @media (max-width: 1000px) {
